@@ -12,7 +12,7 @@ class Design {
   static const _kCurve = Curves.ease;
 
   final _kArrowColor = Colors.black.withOpacity(0.8);
-
+  //top view pager items
   final List<Widget> _pages = <Widget>[
     new ConstrainedBox(
       constraints: const BoxConstraints.expand(),
@@ -37,7 +37,7 @@ class Design {
     ),
   ];
 
-
+ //show top view pager with 3 images and indicator
   Widget TopView() {
     return Container(
       height: 220.0,
@@ -82,7 +82,7 @@ class Design {
 
   }
 
-
+//get horizontal listview vegetable section section
   Widget getVegetableSecton() {
     return Container(
         height: 150.0,
@@ -101,6 +101,8 @@ class Design {
 
 
   }
+
+  //get horizontal listview fruit section
   Widget getFruitSecton() {
     return Container(
         height: 150.0,
@@ -120,6 +122,7 @@ class Design {
 
   }
 
+  //get horizontal listview non veg section
   Widget getNonVegSecton() {
     return Container(
         height: 150.0,
@@ -139,24 +142,24 @@ class Design {
 
   }
 
-
+  //
   Widget getGridItem(IntroItem item) {
     return Container(
       width: 150.0,
       child: Padding(
         padding: const EdgeInsets.all(4.0),
-        child: new Card(
+        child: new Card( //card
           child: Container(
-            child: new Stack(
+            child: new Stack( //Stack
               children: <Widget>[
-                Center(
+                Center( //stack first item
                   child: new Image.network(
                     '${item.imageUrl}',
                     fit: BoxFit.fill,
                   ),
-                ),
+                ), //end here
 
-                Padding(
+                Padding( //stack second item
                   padding: const EdgeInsets.all(8.0),
                   child: new Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -171,10 +174,11 @@ class Design {
 
                     ],
                   ),
-                ),
+                ), //end here
 
-
-                Align(
+                //showing item strip at bottom
+                //with background at bottom center
+                Align( //stack third item
                   alignment: Alignment.bottomCenter,
                   child: Container(
                     width: double.infinity,//match the with with parent
@@ -195,7 +199,7 @@ class Design {
                       ), //Align end here
                     ),
                   ),
-                ), //padding end here
+                ), //Align end here
 
 
               ],
@@ -203,11 +207,12 @@ class Design {
           ),
 
 
-        ),
+        ), //card end
       ),
     );
   } //list item
 
+  //get item section
   Widget getSection(String lable, Color sectionColor) {
     return Padding(
       padding: const EdgeInsets.only(left: 10.0, right: 10.0),
@@ -219,7 +224,7 @@ class Design {
     );
   }
 
-  //get section
+  //get section text
   Widget getSectionText(String label) {
     return new Text(
       "$label",
