@@ -19,8 +19,6 @@ Online Veg&amp;Fruit selling app in flutter
 <img src="https://image.ibb.co/mbKgD9/Screenshot_2018_08_16_15_59_48_870_comroughike_pagetransformer.png" width="300" height="500">
 
 
-### Home Screen1
-<img src="https://image.ibb.co/gv7Mfp/Screenshot_2018_08_16_15_56_22_412_comroughike_pagetransformer.png" width="300" height="500">
 
 ### Home Screen2
 <img src="https://image.ibb.co/gDxF6U/Screenshot_2018_08_16_15_56_36_670_comroughike_pagetransformer.png" width="300" height="500">
