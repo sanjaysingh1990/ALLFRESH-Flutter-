@@ -69,7 +69,7 @@ class IntroPageView extends StatelessWidget {
 
 
           ],
-        ), //center end here,
+        ), //stack end here,
       ),
 
 

@@ -14,8 +14,8 @@ class DrawerItem {
 
 class HomePage extends StatefulWidget {
   final drawerItems = [
-    new DrawerItem("Home", Icons.rss_feed),
-    new DrawerItem("Vegetables", Icons.local_pizza),
+    new DrawerItem("Home", Icons.home),
+    new DrawerItem("Vegetables", Icons.free_breakfast),
     new DrawerItem("Fruits", Icons.info)
   ];
 

@@ -49,8 +49,9 @@ class Design {
             new PageView.builder(
               physics: new AlwaysScrollableScrollPhysics(),
               controller: _controller,
+              itemCount: _pages.length,
               itemBuilder: (BuildContext context, int index) {
-                return _pages[index % _pages.length];
+                return _pages[index];
               },
             ),
             new Positioned(
