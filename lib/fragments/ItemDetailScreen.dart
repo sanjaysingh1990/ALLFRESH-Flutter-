@@ -616,4 +616,5 @@ class ItemDetailScreen extends StatelessWidget {
   }
 
 
+
 }

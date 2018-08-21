@@ -3,11 +3,15 @@ class IntroItem {
     this.title,
     this.category,
     this.imageUrl,
+    this.cost
   });
 
   final String title;
   final String category;
   final String imageUrl;
+  final int cost;
+
+
 }
 
 final vegtableList = <IntroItem>[
@@ -20,11 +24,11 @@ final vegtableList = <IntroItem>[
 ];
 
 final fruitList = <IntroItem>[
-  new IntroItem(title: 'Fresh you will get it\'s our promise!', category: 'Apple', imageUrl: 'https://4.imimg.com/data4/QY/GN/MY-24065638/fresh-apple-500x500.jpg',),
-  new IntroItem(title: 'Fresh you will get it\'s our promise!', category: 'Oragne', imageUrl: 'https://5.imimg.com/data5/VN/YP/MY-33296037/orange-600x600-500x500.jpg',),
-  new IntroItem(title: 'Fresh you will get it\'s our promise!', category: 'Banana', imageUrl: 'https://5.imimg.com/data5/OF/IS/MY-45265279/fresh-banana-500x500.jpg',),
-  new IntroItem(title: 'Fresh you will get it\'s our promise!', category: 'Mango', imageUrl: 'https://4.imimg.com/data4/AT/RM/MY-29356566/indian-mangoes-500x500.jpg',),
-  new IntroItem(title: 'Fresh you will get it\'s our promise!', category: 'Lychee', imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/61tOdWTls0L._SY355_.jpg',),
+  new IntroItem(title: 'Fresh you will get it\'s our promise!', category: 'Apple', imageUrl: 'https://4.imimg.com/data4/QY/GN/MY-24065638/fresh-apple-500x500.jpg',cost: 50),
+  new IntroItem(title: 'Fresh you will get it\'s our promise!', category: 'Oragne', imageUrl: 'https://5.imimg.com/data5/VN/YP/MY-33296037/orange-600x600-500x500.jpg',cost: 100),
+  new IntroItem(title: 'Fresh you will get it\'s our promise!', category: 'Banana', imageUrl: 'https://5.imimg.com/data5/OF/IS/MY-45265279/fresh-banana-500x500.jpg',cost: 150),
+  new IntroItem(title: 'Fresh you will get it\'s our promise!', category: 'Mango', imageUrl: 'https://4.imimg.com/data4/AT/RM/MY-29356566/indian-mangoes-500x500.jpg',cost: 170),
+  new IntroItem(title: 'Fresh you will get it\'s our promise!', category: 'Lychee', imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/61tOdWTls0L._SY355_.jpg',cost: 200),
 
 ];
 

@@ -2,9 +2,10 @@
 //import 'package:drawer_demo/fragments/second_fragment.dart';
 //import 'package:drawer_demo/fragments/third_fragment.dart';
 import 'package:flutter/material.dart';
-import 'package:page_transformer/fragments/FragmentFruits.dart';
-import 'package:page_transformer/fragments/home/FragmentHome.dart';
 import 'package:page_transformer/fragments/FragmentVegetables.dart';
+import 'package:page_transformer/fragments/address/FragmentAddressList.dart';
+import 'package:page_transformer/fragments/home/FragmentHome.dart';
+import 'package:page_transformer/fragments/home/fruitsection/FragmentFruits.dart';
 
 class DrawerItem {
   String title;
@@ -16,7 +17,8 @@ class HomePage extends StatefulWidget {
   final drawerItems = [
     new DrawerItem("Home", Icons.home),
     new DrawerItem("Vegetables", Icons.free_breakfast),
-    new DrawerItem("Fruits", Icons.info)
+    new DrawerItem("Fruits", Icons.info),
+    new DrawerItem("My Address", Icons.location_on)
   ];
 
   @override
@@ -36,7 +38,8 @@ class HomePageState extends State<HomePage> {
         return new FragmentVegetables();
       case 2:
        return new FragmentFruits();
-
+      case 3:
+        return new FragmentAddressList();
       default:
         return new Text("Error");
     }

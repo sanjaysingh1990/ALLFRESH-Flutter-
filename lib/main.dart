@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ItemDetailScreen(),
+      home: SplashScreen(),
       routes: <String, WidgetBuilder>{
         '/HomeScreen': (BuildContext context) => new IntroPageView(),
         '/DashBorad': (BuildContext context) => new HomePage(),
